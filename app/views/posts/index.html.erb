@@ -1,0 +1,12 @@
+<h1>Welcome!!</h1>
+<p>Posts are here</p>
+<% @post.each do |post| %>
+    <p><%= post.title %></p>
+    <%if policy(:post).index? %>
+        <%= link_to "Read Post", post %>
+    <%end%>
+<%end%>
+    <br>
+<%if policy(:post).index? %>
+    <%= link_to "New Post", new_post_path %>
+<%end%>

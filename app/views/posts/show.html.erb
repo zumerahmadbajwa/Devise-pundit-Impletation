@@ -1,0 +1,9 @@
+<div class="text-center">
+<h1>Read Post Page</h1>
+<h2 ><%= @post.title %></h2>
+<%if policy(@post).edit? %>
+<%= link_to "Edit Post", edit_post_path(@post) %>
+<%end%>
+<%if policy(@post).destroy? %>
+<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>
+<%end%></div>
