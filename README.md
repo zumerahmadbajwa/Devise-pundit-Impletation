@@ -1,24 +1,6 @@
-# README
+# Devise-Pundit Implementation
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The basic practice on devise || pundit implementation, from which tells how the user can be authenticate through devise || how the user will be authorised through pundit(didn't have access to see other users posts)
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  * Devise(for authenticate user)
+  * Pundit(for authorization of user)
